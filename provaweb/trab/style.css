@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    background-color: gold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#menu ul {
+    margin: 0;
+    background-color: #404040;
+    list-style: none;
+    text-align: center;
+}
+
+#menu ul li{
+    display: inline;
+}
+
+#menu ul li a{
+    padding: 10px 10px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+#menu ul li a:hover{
+    color:gold
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    text-indent: 25px;
+}
+fieldset{
+  width: 380px;
+}
+#sobre{
+  text-align: center;
+}
+#sobre p{
+  width: 550px;
+  margin-left: 70px;
+}
+#model{
+  margin-left: 800px;
+  position: absolute;
+  top: 120px;
+}
+#local{
+  margin-left: 200px;
+  position: absolute;
+  top: 290px;
+}
+
+#model {
+  margin-left: 1100px;
+  margin-bottom: 400px;
+
+}
+
+#googlemaps {
+  margin-left: 100px;
+}
+
+#text{
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+#tit1{
+  color: gold;
+  margin-right: 1100px;
+  margin-top: -615px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#text1{
+  color: white;
+  font-weight: bold;
+  margin-left: 50px;
+}
+
+#list1{
+  color: gold;
+  font-weight: bold;
+  margin-left: 80px;
+}
+
+#example1{
+  height: 300px;
+  margin-left: -25px;
+  margin-top: 50px;
+}
+
+#example2{
+  height: 300px;
+  margin-left: -90px;
+  margin-top: 50px;
+}
+
+#example3{
+  height: 300px;
+  margin-left: -90px;
+  margin-top: 50px;
+}
+
+#bg2{
+  height: 550px;
+  margin-top: -250px;
+  margin-left: 75px;
+}

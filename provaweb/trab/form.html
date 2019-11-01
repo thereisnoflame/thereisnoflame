@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Agro Rocha - Paripe</title>
+
+<style>
+</style>
+
+</head>
+
+<body>
+    <div id = "menu">
+        <ul>
+            <li><a href = "index.html">Inicio</a></li>
+            <li><a href = "quemsomos.html">Quem Somos</a></li>
+            <li><a href = "#">Contate-nos</a></li>
+            <li><a href = "form.html">Peça já</a></li>
+        </ul>
+    </div>
+<center>
+<form class="formulario" action="" method="post">
+  <br><br><br><br>
+  <fieldset>
+    <legend>Contato</legend>
+    <label style="margin-left:17px">Nome: </label><input type="text" name="Nome" value="" PlaceHolder="João Carlos" onblur="FiltrarNome(this)" onfocus="FiltrarNome(this)">
+    <br><br>
+    <label>Telefone: </label><input type="text" name="Telefone" value="" PlaceHolder="(55)99999-9999" onblur="Mascara(this)" onfocus="Filtrar(this)">
+    <br><br>
+    <label style="margin-left: 16px">Email: </label><input type="email" name="" value="" PlaceHolder="Exemplo@exemplo.com">
+
+  </fieldset>
+  <fieldset>
+    <legend>Pedido</legend>
+    <label style="margin-left:3px">Produto: </label><input type="text" name="Produto" value="" PlaceHolder="Digite o nome do produto">
+    <br><br>
+    <label>Quantidade: </label><input style="margin-right: 25px" type="number" name="Quantidade" value="" PlaceHolder="00">
+    <br><br>
+    <label style="margin-right:270px">Comentários:</label>
+    <br>
+    <textarea name="name" rows="8" cols="50" PlaceHolder="Informe-nos sobre detalhes do produto ou envie-nos sua sugestão!"></textarea>
+  </fieldset>
+  <br>
+  <input type="submit" name="Enviar" value="Enviar">
+</center>
+</form>
+<script type="text/javascript">
+function Mascara(Telefone){
+  const tel = Telefone.value.replace(/[\D]/g, '');
+  const cel = tel.length === 11;
+  let filtro;
+  if(tel === ''){
+    Filtrar(Telefone);
+    return;
+  }
+  if(cel){
+    const x = tel.slice(2,7);
+    const y = tel.slice(7,11);
+    const z = tel.slice(0,2);
+    filtro = `(${z})${x}-${y}`
+  }
+  else {
+    const x = tel.slice(2,6);
+    const y = tel.slice(6,10);
+    const z = tel.slice(0,2);
+    filtro = `(${z})${x}-${y}`
+  }
+  Telefone.value = filtro;
+}
+function Filtrar(Telefone){
+  const tel = Telefone.value;
+  const filtro = tel.replace(/\D/g, '');
+  Telefone.value = filtro;
+}
+function FiltrarNome(Nome){
+  Nome.value = Nome.value.replace(/[^A-Za-zÀ-ÃÇ-ÎÑ-ÕÙ-Ýà-ãç-îñ-õù-ýÿ ]/g, '');
+
+}
+</script>
+
+</body>
+
+</html>
